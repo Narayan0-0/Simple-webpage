@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Viewport meta tag for responsive design - tells browsers how to adjust the page to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage that appears in browser tab -->
+    <title>Assignment 1</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section - contains logo and navigation -->
+    <header>
+        <div class="container">
+            <!-- Logo with image and text -->
+            <div class="logo">
+                <!-- Image logo with alt text for accessibility -->
+                <img src="beanbag.png" alt="Company Logo">
+                <!-- Text part of the logo -->
+                <span class="logo-text">Lumo</span>
+            </div>
+            
+            <!-- Hamburger menu icon for mobile view -->
+            <div class="menu-toggle">
+                <!-- Three spans create the hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <!-- Navigation links with active class for current page -->
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section - contains both sidebar and main content -->
+    <div class="page-container">
+        <!-- Sidebar - HTML5 aside element for related content -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+            </ul>
+            
+            <div class="sidebar-widget">
+                <h3>About Us</h3>
+                <p>Smart Comfort.</p>
+            </div>
+        </aside>
+        
+        <!-- Main content area -->
+        <main>
+            <div class="container">
+                <!-- Hero section with heading and call-to-action -->
+                <section class="hero">
+                    <h1>Welcome to Our Website</h1>
+                    <p>This is a basic responsive website created with HTML5 and CSS.</p>
+                    <button>Learn More</button>
+                </section>
+
+                <!-- Features section with multiple feature boxes -->
+                <section class="features">
+                    <div class="feature-box">
+                        <h2>Feature 1</h2>
+                        <p>--</p>
+                    </div>
+                    <div class="feature-box">
+                        <h2>Feature 2</h2>
+                        <p>--</p>
+                    </div>
+                    <div class="feature-box">
+                        <h2>Feature 3</h2>
+                        <p>--</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <!-- Footer content divided into sections -->
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Smart Comfort.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: a@b.com</p>
+                    <p>Phone: 1 234 567 890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright information -->
+            <div class="copyright">
+                <p>&copy; 2025 Lumo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript to toggle the mobile menu -->
+    <script>
+        // Get the menu toggle button and navigation element
+        //const menuToggle = document.querySelector('.menu-toggle');
+        //const nav = document.querySelector('nav');
+        
+        // Add click event listener to toggle the menu
+        //menuToggle.addEventListener('click', function() {
+            // Toggle 'active' class on navigation and menu toggle
+          //  nav.classList.toggle('active');
+            //this.classList.toggle('active');
+        //});
+    </script>
+</body>
+</html>
