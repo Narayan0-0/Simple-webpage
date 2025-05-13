@@ -1,0 +1,309 @@
+/* CSS Reset - removes default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width include padding and border */
+}
+
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Simple, widely available font */
+    line-height: 1.6; /* Improves text readability */
+    color: #333; /* Dark gray text color */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Container class to control width and center content */
+.container {
+    width: 90%; /* Uses 90% of the viewport width */
+    max-width: 1200px; /* Maximum width on large screens */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 15px; /* Adds some space on the sides */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Keeps header at the top when scrolling */
+    width: 100%; /* Full width of the viewport */
+    z-index: 1000; /* Ensures header stays on top of other elements */
+}
+
+header .container {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Spaces items evenly */
+    align-items: center; /* Centers items vertically */
+    padding: 15px; /* Padding inside the header */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers items vertically */
+}
+
+.logo img {
+    height: 40px; /* Fixed height for the logo */
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+.logo-text {
+    font-size: 1.5rem; /* Larger text for the logo */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Dark text color */
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex; /* Horizontal layout for menu items */
+    list-style: none; /* Removes bullet points */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color */
+    font-weight: 500; /* Slightly bold text */
+    padding: 5px 0; /* Vertical padding only */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #4a90e2; /* Blue color on hover or for active link */
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none; /* Hidden by default, shown on mobile */
+    flex-direction: column; /* Stacks the spans vertically */
+    cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+.menu-toggle span {
+    display: block; /* Makes spans block elements */
+    width: 25px; /* Width of each line */
+    height: 3px; /* Height/thickness of each line */
+    background-color: #333; /* Dark color for the lines */
+    margin-bottom: 5px; /* Space between lines */
+    transition: all 0.3s; /* Smooth transition for animation */
+}
+
+/* Page Container - holds sidebar and main content */
+.page-container {
+    display: flex; /* Uses flexbox for layout */
+    padding-top: 70px; /* Space for the fixed header */
+    min-height: calc(100vh - 200px); /* Minimum height to push footer down */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-right: 20px; /* Space between sidebar and main content */
+}
+
+.sidebar h3 {
+    margin: 20px 0 10px; /* Space around headings */
+    color: #4a90e2; /* Blue color for headings */
+    border-bottom: 1px solid #eee; /* Light border below headings */
+    padding-bottom: 5px; /* Space below the text before the border */
+}
+
+.sidebar h3:first-child {
+    margin-top: 0; /* Removes top margin from first heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Removes bullet points */
+    margin-bottom: 20px; /* Space below lists */
+}
+
+.sidebar ul li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #555; /* Medium gray text color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.sidebar ul li a:hover {
+    color: #4a90e2; /* Blue color on hover */
+}
+
+.sidebar-widget {
+    margin-top: 20px; /* Space above widget */
+    padding: 15px; /* Padding inside widget */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center; /* Centers text */
+    padding: 40px 0; /* Vertical padding */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 30px; /* Space below hero section */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Large font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Larger text for readability */
+    max-width: 700px; /* Maximum width for better readability */
+    margin: 0 auto 30px; /* Centers the paragraph and adds bottom margin */
+}
+
+.hero button {
+    background-color: #4a90e2; /* Blue button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 30px; /* Padding inside button */
+    font-size: 1rem; /* Text size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.hero button:hover {
+    background-color: #3a7bc8; /* Darker blue on hover */
+}
+
+/* Features Section */
+.features {
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    justify-content: space-between; /* Spaces items evenly */
+}
+
+.feature-box {
+    flex: 1; /* Each box takes equal space */
+    min-width: 250px; /* Minimum width before wrapping */
+    margin: 15px; /* Space around each box */
+    padding: 20px; /* Padding inside each box */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.feature-box h2 {
+    margin-bottom: 15px; /* Space below heading */
+    color: #4a90e2; /* Blue heading */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0 20px; /* Padding top and bottom */
+}
+
+.footer-content {
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    justify-content: space-between; /* Spaces items evenly */
+}
+
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 250px; /* Minimum width before wrapping */
+    margin-bottom: 20px; /* Space below each section */
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; /* Space below heading */
+    font-size: 1.2rem; /* Heading size */
+}
+
+.social-links a {
+    color: #fff; /* White text for links */
+    margin-right: 15px; /* Space between links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-links a:hover {
+    color: #4a90e2; /* Blue on hover */
+}
+
+.copyright {
+    text-align: center; /* Centers text */
+    margin-top: 20px; /* Space above copyright */
+    padding-top: 20px; /* Padding above copyright */
+    border-top: 1px solid #444; /* Border above copyright */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (tablets and mobile) */
+    
+    /* Show hamburger menu and hide regular nav */
+    .menu-toggle {
+        display: flex; /* Shows the hamburger icon */
+    }
+    
+    nav {
+        position: absolute; /* Takes it out of the normal flow */
+        top: 70px; /* Positions below the header */
+        left: 0; /* Aligns to the left edge */
+        width: 100%; /* Full width */
+        background-color: #fff; /* White background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        max-height: 0; /* Initially collapsed */
+        overflow: hidden; /* Hides overflow content */
+        transition: max-height 0.3s ease-out; /* Smooth height transition */
+    }
+    
+    nav.active {
+        max-height: 300px; /* Expanded height when active */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stacks menu items vertically */
+        padding: 20px; /* Padding inside the menu */
+    }
+    
+    nav ul li {
+        margin: 0 0 15px 0; /* Vertical spacing between items */
+    }
+    
+    /* Change page layout for mobile */
+    .page-container {
+        flex-direction: column; /* Stack sidebar and main content */
+    }
+    
+    /* Make sidebar full width on mobile */
+    .sidebar {
+        width: 100%; /* Full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+    
+    /* Adjust feature boxes for smaller screens */
+    .features {
+        flex-direction: column; /* Stacks feature boxes vertically */
+    }
+    
+    /* Adjust footer sections for smaller screens */
+    .footer-content {
+        flex-direction: column; /* Stacks footer sections vertically */
+    }
+}
