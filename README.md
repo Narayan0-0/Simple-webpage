@@ -8,6 +8,15 @@ Welcome to **Lumo**, a modern and responsive website template created using **HT
 
 > ([Lumo](https://narayan0-0.github.io/Simple-webpage/))
 
+## 📂 Project Structure
+```bash
+📁 lumo/
+├── index.html
+├── style.css
+└── assets/
+└── images/
+```
+
 ## 📌 Features
 
 - 🔹 Responsive layout using Flexbox and Grid
