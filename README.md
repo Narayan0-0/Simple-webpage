@@ -1,5 +1,3 @@
-# Simple-webpage
-
 # Lumo - Responsive Company Website
 
 Welcome to **Lumo**, a modern and responsive website template created using **HTML5** and **CSS3** only. This project showcases a clean and user-friendly layout suitable for businesses, portfolios, or personal websites.
